@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/vojtechovsky/C.Sharp.Whats.New.svg?branch=master)](https://travis-ci.org/vojtechovsky/C.Sharp.Whats.New)
+[![Build status](https://ci.appveyor.com/api/projects/status/p6luxu5egqbk3c19?svg=true)](https://ci.appveyor.com/project/vojtechovsky/c-sharp-whats-new)
 
 <!--
 [![Coverage Status](https://coveralls.io/repos/simkimsia/UtilityBehaviors/badge.png?branch=master)](https://coveralls.io/r/simkimsia/UtilityBehaviors?branch=master)
