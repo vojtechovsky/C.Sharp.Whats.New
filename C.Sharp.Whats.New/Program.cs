@@ -9,20 +9,20 @@ namespace C.Sharp.Whats.New
         /// <summary>
         ///     Person - Auto property c#5
         /// </summary>
-        //class Person
-        //{
-        //    private readonly string firstName;
+        class Person
+        {
+            private readonly string firstName;
 
-        //    public string FirstName
-        //    {
-        //        get { return this.firstName; }
-        //    }
+            public string FirstName
+            {
+                get { return this.firstName; }
+            }
 
-        //    public Person(string firstName)
-        //    {
-        //        this.firstName = firstName;
-        //    }
-        //}
+            public Person(string firstName)
+            {
+                this.firstName = firstName;
+            }
+        }
 
         /// <summary>
         ///     Person - Auto property C#6
@@ -199,7 +199,7 @@ namespace C.Sharp.Whats.New
         //}
 
         /// <summary>
-        ///     Person - Expression bodied Members c#5
+        ///     Person - Nullability c#5
         /// </summary>
         //class Person
         //{
@@ -239,46 +239,54 @@ namespace C.Sharp.Whats.New
 
         #region 5) Using NameOf
 
-        class Person
-        {
-            private readonly string firstName;
-            public string FirstName
-            {
-                get { return this.firstName; }
-            }
+        //class Person
+        //{
+        //    private readonly string firstName;
+        //    public string FirstName
+        //    {
+        //        get { return this.firstName; }
+        //    }
 
-            public Person(string firstName)
-            {
-                this.firstName = firstName;
-            }
+        //    public Person(string firstName)
+        //    {
+        //        this.firstName = firstName;
+        //    }
 
-            /// nameOf C#5
-            /// 
+        //    /// nameOf C#5
+        //    /// 
 
 
-            //public void GreetPerson(Person person)
-            //{
-            //    if (person == null)
-            //    {
-            //        throw new ArgumentNullException("person");
-            //    }
+        //    //public void GreetPerson(Person person)
+        //    //{
+        //    //    if (person == null)
+        //    //    {
+        //    //        throw new ArgumentNullException("person");
+        //    //    }
 
-            //    Console.WriteLine("{0} says hi to {1}", person.FirstName, this.FirstName);
-            //}
+        //    //    Console.WriteLine("{0} says hi to {1}", person.FirstName, this.FirstName);
+        //    //}
 
-            /// nameOf C#6
-             
-            
-            public void GreetPerson(Person person)
-            {
-                if (person == null)
-                {
-                    throw new ArgumentNullException(nameof(person));
-                }
+        //    /// nameOf C#6
+        //    //public void GreetPerson(Person person)
+        //    //{
+        //    //    if (person == null)
+        //    //    {
+        //    //        throw new nameof(person);
+        //    //    }
 
-                Console.WriteLine($"{person.FirstName} says hi to {this.FirstName}");
-            }
-        }
+        //    //    Console.WriteLine("{0} says hi to {1}", person.FirstName, this.FirstName);
+        //    //} 
+
+        //    //public void GreetPerson(Person person)
+        //    //{
+        //    //    if (person == null)
+        //    //    {
+        //    //        throw new ArgumentNullException(nameof(person));
+        //    //    }
+
+        //    //    Console.WriteLine($"{person.FirstName} says hi to {this.FirstName}");
+        //    //}
+        //}
 
         /// <summary>
         ///     Person - Auto property C#6
@@ -300,8 +308,6 @@ namespace C.Sharp.Whats.New
 
             var person = new Person("Petr");
             Console.WriteLine(person.FirstName);
-            Console.WriteLine(person);
-            Console.WriteLine(person);
 
             #region Nullability
 
